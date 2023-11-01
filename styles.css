@@ -9,11 +9,24 @@
 p {
     font-size: 16px;
     font-family: var(--font-open-sans);
+    color: var(--Very-Dark-Blue);
 }
 
 h1 {
     font-family: var(--font-open-sans);
     font-size: 26px;
+    color: var(--Very-Dark-Blue);
+}
+
+h2 {
+    font-family: var(--font-open-sans);
+    font-size: 18px;
+    color: var(--Very-Dark-Blue);
+}
+
+h3 {
+    font-family: var(--font-open-sans);
+    color: var(--Very-Dark-Blue);
 }
 
 body{
@@ -21,6 +34,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 
 :root {
     --font-raleway: 'Raleway', sans-serif;
@@ -34,6 +48,8 @@ body{
     --Desaturated-Blue: hsl(238, 22%, 44%);
 
     --hover: #6b9bff;
+
+    --bg-color:#f9f8fe;
 
     /* Accent */
 
@@ -53,6 +69,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
 }
 
 .menu{
@@ -128,6 +148,101 @@ input {
 /* END FORM */
 
 /* END HEADER */
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.container-sticky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    margin: 70px 0 20px;
+}
+
+.card p {
+    text-align: left;
+    color: var(--Very-Dark-Blue);
+    margin: 25px 0;
+}
+
+.card-a {
+    color: var(--Light-Gray);
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid var(--Light-Gray);
+    position: relative;
+    left: 10px;
+}
+
+.testimonial {
+    width: 80vw;
+    margin: 50px 0;
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.208);
+    padding: 20px;
+}
+
+.testimonial p {
+    text-align: left;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.kyle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-kyle {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.kyle-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.kyle-info  h3{
+    font-size: 13px;
+}
+
+.kyle-info span {
+    font-size: 10px;
+}
+
+
+/* END MAIN */
 
 @media screen and (min-width:900px) {
     
