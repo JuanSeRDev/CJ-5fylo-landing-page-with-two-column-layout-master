@@ -51,6 +51,8 @@ body{
 
     --bg-color:#f9f8fe;
 
+    --white: white;
+
     /* Accent */
 
     --Bright-Blue: hsl(224, 93%, 58%);
@@ -171,13 +173,18 @@ main {
 .container-sticky {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: sticky;
 }
 
 .img2 {
     width: 100%;
+}
+
+.card-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -202,6 +209,7 @@ main {
 }
 
 .testimonial {
+    background: var(--white);
     width: 80vw;
     margin: 50px 0;
     position: relative;
@@ -245,6 +253,12 @@ main {
 /* END MAIN */
 
 @media screen and (min-width:900px) {
+
+    /* HEADER */
+
+    header {
+        background-image: url(images/bg-curve-desktop.svg);
+    }
     
     .header-info {
         max-width: 90vw;  
@@ -282,6 +296,53 @@ main {
     .submit {
         width: 40%;
     }
+
+    /* END HEADER */
+
+    /* MAIN */
+
+    .container {
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .container-sticky {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-general  {
+        width: 600px;
+        align-items: flex-start;
+    }
+
+    .card {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .card h2{
+        font-size: 35px;
+    }
+    .card p {
+        padding-right: 100px;
+    }
+
+    .card-a {
+        left: 0;
+    }
+
+    .img2 {
+        width: 500px;
+    }
+
+    .testimonial {
+        width: 50%;
+        left: 0;
+    }
+    
 }
 
 .attribution { font-size: 11px; text-align: center; }
